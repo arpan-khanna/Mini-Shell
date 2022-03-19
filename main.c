@@ -38,7 +38,7 @@ int main(){
     char *historyPath = (char *)malloc(maxInput*sizeof(char));//it will fetch the history file absolute path
     strcpy(historyPath,getCurrentDir());
 
-    strcat(historyPath,"/tmp/history.txt");
+    strcat(historyPath,"/history.txt");
 
     FILE *historyFile = fopen(historyPath,"w");//open history file in write mode
     
